@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
-const generateMarkdown = require('generateMarkdown')
+//const generateMarkdown = require('generateMarkdown.js')
 const inquirer = require('inquirer')
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -33,7 +34,8 @@ const questions = [
     {
         type: 'list',
         name: 'license',
-        message: ['']
+        message: 'Which license will you use?',
+        choices: ['MIT', 'GNU GPLv3', 'Apache2.0' ]
     },
 ];
 
@@ -44,7 +46,8 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    //function text
+    inquirer
+        .prompt(questions)
 }
 
 // Function call to initialize app
