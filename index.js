@@ -1,53 +1,71 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
-//const generateMarkdown = require('generateMarkdown.js')
+const generateMarkdown = require('./utils/generateMarkdown')
 const inquirer = require('inquirer')
 
 // TODO: Create an array of questions for user input
 const questions = [
     {
         type: 'input',
-        name: 'fileName',
+        name: 'project',
         message: 'what is the name of your project?'
     },
     {
         type: 'input',
         name: 'description',
-        message: 'please give a description of your project:'
+        message: 'Please give a description of your project:'
     },
     {
-        type: 'checkbox',
-        name: 'tech',
-        message: 'what technologies did you use on this project? (Select all that apply)',
-        choices: ['HTML', 'CSS', 'JS', 'jQuery', 'node.js', 'npm', ]
+        name: 'instuctions',
+        message: 'Please provide installation instructions:',
+        type: 'input'
     },
     {
+        name: 'usage',
         type: 'input',
-        name: 'link1',
-        message: 'please provide repository link'
+        message: 'Please provide usage instructions:'
     },
     {
+        name: 'contribution',
         type: 'input',
-        name: 'link2',
-        message: 'please provide link to deployed app'
+        message: 'Please provide contribution guidelines:'
+    },
+    {
+        name: 'test',
+        type: 'input',
+        message: 'Please provide any test instructions:'
     },
     {
         type: 'list',
         name: 'license',
-        message: 'Which license will you use?',
-        choices: ['MIT', 'GNU GPLv3', 'Apache2.0' ]
+        message: 'Which license will your project use?',
+        choices: ['MIT', 'GNU GPLv3', 'Apache2.0', 'the Unlicense', 'none' ]
     },
+    {
+        name: 'github',
+        type: 'input',
+        message: 'What is your github user name?'
+    },
+    {
+        name: 'email',
+        type: 'input',
+        message: 'What is your email address?'
+    },
+    
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    //function text
+    fs.writeFile(fileName, data)
+
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
         .prompt(questions)
+        .then(writeToFile('README.md', generateMarkdown(answers)))
+        .catch((error) => console.log(error))
 }
 
 // Function call to initialize app
