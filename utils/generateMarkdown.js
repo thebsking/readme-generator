@@ -2,7 +2,10 @@
 // If there is no license, return an empty string
 // use github api to grab licenses
 const { Octokit } = require("@octokit/core");
-await octokit.request('GET /licenses')
+const octokit = new Octokit();
+const licenseInfo = await octokit.request('GET /licenses')
+
+console.log(licenseInfo)
 
 function renderLicenseBadge(license) {
   
