@@ -1,8 +1,11 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 // use github api to grab licenses
-function renderLicenseBadge(license) {
+const { Octokit } = require("@octokit/core");
+await octokit.request('GET /licenses')
 
+function renderLicenseBadge(license) {
+  
 }
 
 // TODO: Create a function that returns the license link
@@ -19,7 +22,9 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.project}
+  return `
+  # ${data.project}
+  
   ## Description
   ${data.description}
   ${renderLicenseBadge(data.license)}
