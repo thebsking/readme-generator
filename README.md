@@ -1,32 +1,44 @@
 
-  # this
+  # ReadMe Generator
   
   ## Description
-  nothing
-  ![license badge](https://img.shields.io/badge/license-MIT-green)
+  ![license badge](https://img.shields.io/badge/license-GPL-3.0-green)
+
+  A simple CLI tool to create a quality README file for your project
 
   ## Table of Contents
-  [Installation Instructions](## Installation)
-  []()
-  ## Installation
+  [Installation](#installation)
+
+  [Usage](#usage)
+
+  [License](#license)
+
+  [Contributing](#contributing)
+
+  [Tests](#tests)
+
+  [Questions?](#questions-?)
+
+
+  ## Installation 
   undefined
 
   ## Usage
-  don't
+  Open a terminal window in the project folder, run 'node index.js', answer the prompts, a new README.md file will be created
 
   ## License
   undefined
   undefined
 
   ## Contributing
-  don't
+  Don't touch my shit
 
   ## Tests
   undefined
 
   ## Questions?
-  bsking
-  bsking
+  Github Profile: (https://github.com/thebsking)
+  Email me: [brandonscottking@gmail.com](mailto:brandonscottking@gmail.com)
 
 
 
