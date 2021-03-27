@@ -1,12 +1,10 @@
 
-  # ReadMe Generator
+  # README Generator
+  ![license badge](https://img.shields.io/badge/license-MIT-green)
   
-  ## Description
-  ![license badge](https://img.shields.io/badge/license-GPL-3.0-green)
-
-  A simple CLI tool to create a quality README file for your project
-
   ## Table of Contents
+  [Description](#description)
+
   [Installation](#installation)
 
   [Usage](#usage)
@@ -20,24 +18,29 @@
   [Questions?](#questions-?)
 
 
+  ## Description
+  A simple CLI tool to quickly create a professional README.md file
+
+
   ## Installation 
   undefined
 
   ## Usage
-  Open a terminal window in the project folder, run 'node index.js', answer the prompts, a new README.md file will be created
+  In your terminal, move to the directory containing project files  
+  run 'node index.js'
 
   ## License
-  undefined
-  undefined
+  This project is covered under the MIT. For more information please visit https://choosealicense.com/licenses/MIT
 
   ## Contributing
-  Don't touch my shit
+  Don't touch it!
 
   ## Tests
   undefined
 
   ## Questions?
-  Github Profile: (https://github.com/thebsking)
+  Github Profile: https://github.com/thebsking 
+
   Email me: [brandonscottking@gmail.com](mailto:brandonscottking@gmail.com)
 
 

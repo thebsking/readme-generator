@@ -16,7 +16,7 @@ const questions = [
         message: 'Please give a description of your project:'
     },
     {
-        name: 'instuctions',
+        name: 'instructions',
         message: 'Please provide installation instructions:',
         type: 'input'
     },
@@ -39,7 +39,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Which license will your project use?',
-        choices: ['MIT', 'GPL-3.0', 'Apache2.0', 'none' ]
+        choices: ['MIT', 'GPL3.0', 'Apache2.0', 'none' ]
     },
     {
         name: 'github',
