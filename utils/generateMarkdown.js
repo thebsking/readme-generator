@@ -1,14 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 // use github api to grab licenses
-const { Octokit } = require("@octokit/core");
-const octokit = new Octokit();
-const licenseInfo = await octokit.request('GET /licenses')
-
-console.log(licenseInfo)
 
 function renderLicenseBadge(license) {
-  
+  if (license === 'none'){
+    return ''
+  } else{
+  return `![license badge]('https://img.shields.io/badge/license-${license}-green')`
+  }
 }
 
 // TODO: Create a function that returns the license link
@@ -33,8 +32,8 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
-  //enter section links
-
+  [Installation Instructions](## Installation)
+  []()
   ## Installation
   ${data.instructions}
 
