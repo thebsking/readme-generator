@@ -1,6 +1,6 @@
 
   # README Generator
-  ![license badge](https://img.shields.io/badge/license-Apache2.0-green)
+  ![license badge](https://img.shields.io/badge/license-MIT-green)
   
   ## Table of Contents
   [Description](#description)
@@ -30,11 +30,10 @@
 
   ## License
   This project is covered under the Apache2.0 license.
- 
-    For more information please visit https://choosealicense.com/licenses/apache-2.0
+  For more information please visit https://choosealicense.com/licenses/mit
 
   ## Contributing
-  If you would liek to contibute please create a pull request
+  If you would like to contibute please create a pull request
 
   ## Tests
   n/a

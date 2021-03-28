@@ -38,7 +38,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === 'none') {
-    return ``
+    return '';
   } else {
     return `This project is covered under the ${license} license.\n 
     For more information please visit ${renderLicenseLink(license)}`
