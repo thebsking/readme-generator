@@ -1,6 +1,6 @@
 
   # README Generator
-  ![license badge](https://img.shields.io/badge/license-MIT-green)
+  ![license badge](https://img.shields.io/badge/license-Apache2.0-green)
   
   ## Table of Contents
   [Description](#description)
@@ -19,24 +19,25 @@
 
 
   ## Description
-  A simple CLI tool to quickly create a professional README.md file
+  A simple CLI tool to quickly create a professionaly styled README.md file for your project
 
 
   ## Installation 
-  undefined
+  Downlaod souce code (note: node.js is required)
 
   ## Usage
-  In your terminal, move to the directory containing project files  
-  run 'node index.js'
+  In your terminal, navigate to the directory containing the souce code. <br> Run 'node index.js'
 
   ## License
-  This project is covered under the MIT. For more information please visit https://choosealicense.com/licenses/MIT
+  This project is covered under the Apache2.0 license.
+ 
+    For more information please visit https://choosealicense.com/licenses/apache-2.0
 
   ## Contributing
-  Don't touch it!
+  If you would liek to contibute please create a pull request
 
   ## Tests
-  undefined
+  n/a
 
   ## Questions?
   Github Profile: https://github.com/thebsking 

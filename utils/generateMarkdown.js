@@ -3,27 +3,41 @@
 // use github api to grab licenses
 
 function renderLicenseBadge(license) {
-  if (license === 'none'){
+  if (license === 'none') {
     return ''
-  } else{
-  return `![license badge](https://img.shields.io/badge/license-${license}-green)`
+  } else {
+    return `![license badge](https://img.shields.io/badge/license-${license}-green)`
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license === 'none') {
+  let link;
+  switch (license) {
+    case 'MIT':
+      link = 'mit';
+      break;
+    case 'GPL3.0':
+      link = 'gpl-3.0';
+      break;
+    case 'Apache2.0':
+      link = 'apache-2.0';
+      break;
+    default: 'none';
+  }
+
+  if (link === 'none') {
     return ''
   } else {
-    return `https://choosealicense.com/licenses/${license}`
+    return `https://choosealicense.com/licenses/${link}`
   }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if(license === 'none'){
+  if (license === 'none') {
     return ``
   } else {
     return `This project is covered under the ${license} license.\n 
@@ -63,7 +77,7 @@ function generateMarkdown(data) {
   ${data.contribution}
 
   ## Tests
-  ${data.tests}
+  ${data.test}
 
   ## Questions?
   Github Profile: https://github.com/${data.github} \n
