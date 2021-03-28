@@ -19,24 +19,25 @@
 
 
   ## Description
-  A simple CLI tool to quickly create a professionaly styled README.md file for your project
+  A simple CLI tool to quickly create professionally styled README.md file for your project
 
 
   ## Installation 
-  Downlaod souce code (note: node.js is required)
+  Download source code (node.js is required)
 
   ## Usage
-  In your terminal, navigate to the directory containing the souce code. <br> Run 'node index.js'
+  View Walkthrough video [here](https://drive.google.com/file/d/1Hxel0WslPYr0fl01dkd0C1wpC01aUSED/view)
 
   ## License
-  This project is covered under the Apache2.0 license.
-  For more information please visit https://choosealicense.com/licenses/mit
+  This project is covered under the MIT license.
+ 
+    For more information please visit https://choosealicense.com/licenses/mit
 
   ## Contributing
-  If you would like to contibute please create a pull request
+  To contribute please create a Github pull request
 
   ## Tests
-  n/a
+  n.a
 
   ## Questions?
   Github Profile: https://github.com/thebsking 
